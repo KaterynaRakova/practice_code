@@ -1,3 +1,5 @@
+package Array_2;
+
 public class Array_sum67 {
     /*
     Return the sum of the numbers in the array, except ignore sections of numbers starting with a 6 and extending

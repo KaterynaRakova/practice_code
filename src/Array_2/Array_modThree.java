@@ -1,4 +1,4 @@
-import javax.sound.midi.Soundbank;
+package Array_2;
 
 public class Array_modThree {
     /*
