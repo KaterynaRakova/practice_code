@@ -25,8 +25,7 @@ no14([2, 3, 4]) → true
     public boolean solution2_no14(int[] nums) {
         if(nums.length <2)
             return true;
-        boolean t =false;
-        boolean t2 =false;
+        boolean t =false,t2 =false;
         for(int e : nums){
             if( e==1 ){
                 t=true;}
