@@ -8,7 +8,21 @@ no14([1, 2, 3]) → true
 no14([1, 2, 3, 4]) → false
 no14([2, 3, 4]) → true
      */
+
     public boolean no14(int[] nums) {
+        for(int e: nums){
+            if (e==1){
+                for(int n:nums){
+                    if(n==4)
+                        return false;
+                }
+            }
+        }
+        return true;
+    }
+
+
+    public boolean solution2_no14(int[] nums) {
         if(nums.length <2)
             return true;
         boolean t =false;
@@ -22,5 +36,4 @@ no14([2, 3, 4]) → true
         }
         return t!=t2;
     }
-
 }
