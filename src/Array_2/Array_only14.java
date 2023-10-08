@@ -15,6 +15,16 @@ public class Array_only14 {
    }
 
     public boolean solution2_only14(int[] nums) {
+        for(int e: nums){
+            if (e!=1){
+                if(e!=4)
+                    return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean solution3_only14(int[] nums) {
         boolean t= false;
         if(nums.length < 1)
             return true;
