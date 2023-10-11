@@ -13,8 +13,12 @@ public class Array_only14 {
     public boolean only14(int[] nums) {
     return nums.length==Arrays.stream(nums).filter(m->m==1||m==4).toArray().length;
    }
-
     public boolean solution2_only14(int[] nums) {
+        return Arrays.toString(nums).replaceAll("[^14]","").length()==nums.length;
+    }
+
+
+    public boolean solution3_only14(int[] nums) {
         for(int e: nums){
             if (e!=1){
                 if(e!=4)
@@ -24,7 +28,7 @@ public class Array_only14 {
         return true;
     }
 
-    public boolean solution3_only14(int[] nums) {
+    public boolean solution4_only14(int[] nums) {
         boolean t= false;
         if(nums.length < 1)
             return true;
@@ -37,6 +41,4 @@ public class Array_only14 {
         }
         return t;
     }
-
-
 }
