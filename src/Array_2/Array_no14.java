@@ -1,5 +1,7 @@
 package Array_2;
 
+import java.util.Arrays;
+
 public class Array_no14 {
     /*
 
@@ -8,8 +10,14 @@ no14([1, 2, 3]) → true
 no14([1, 2, 3, 4]) → false
 no14([2, 3, 4]) → true
      */
-
     public boolean no14(int[] nums) {
+        String str= Arrays.toString(nums).replaceAll("[^0-9]","");
+        if(str.contains("1") && str.contains("4"))
+            return false;
+        return true;
+
+    }
+    public boolean solution2_no14(int[] nums) {
         for(int e: nums){
             if (e==1){
                 for(int n:nums){
@@ -22,7 +30,7 @@ no14([2, 3, 4]) → true
     }
 
 
-    public boolean solution2_no14(int[] nums) {
+    public boolean solution3_no14(int[] nums) {
         if(nums.length <2)
             return true;
         boolean t =false,t2 =false;
