@@ -22,6 +22,5 @@ doubleChar("Hi-There") → "HHii--TThheerree"
         Arrays.stream(str.split("")).forEach(n->s.append(n+n));
         return ""+s;
 
-
     }
 }
